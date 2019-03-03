@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>La nuve del Chef</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" type="text/css" media="screen" href="proyect.css">
+        <script src="proyect.js"></script>
+    </head>
+
+    <body>
+        <div id="caja_body">
+            <header id="cabecera">
+                <img src="img/logo_chef.png" alt="logo" id="logo">
+                <!-- <img id="lupa" src="img/lupa.png" onclick="()"> -->
+                <!-- <input type="text" name="" placeholder="Busca" id="input_buscar"> -->
+                <nav id="menu">
+                    <ul>
+                        <li><a class="ico_bar" href="#home">HOME</a></li>
+                        <li><a class="ico_bar" href="#acerca">ACERCA DE</a></li>
+                        <li><a class="ico_bar" href="#contacto">CONTACTO</a></li>
+                    </ul>   
+                </nav>
+            </header>
+
+            <main id="main">
+                <section>
+
+                    <div class="div0" id="home">
+
+                        <form>
+                            <ul>
+                                <li>
+                                    <h3>REGISTRO</h3>
+                                    <label>*Nombre</label>
+                                    <input type="text" id="nombre" class="stilo_borde">
+                                </li>
+                                <li>
+                                    <label>*Apellidos</label>
+                                    <input type="text" id="apell" class="stilo_borde">
+                                </li>
+                                <li>
+                                    <label>*DNI</label>
+                                    <input type="text" id="dni" class="stilo_borde">
+                                </li>
+                                <li>
+                                    <label>*Dirección</label>
+                                    <input type="text" id="direcc" class="stilo_borde">
+                                </li>
+                                <li>
+                                    <label>*Teléfono</label>
+                                    <input type="text" id="tlf" class="stilo_borde">
+                                </li>
+                                <li>
+                                    <label>*Email</label>
+                                    <input type="email" id="email" class="stilo_borde">
+                                </li>
+                    
+                                <input type="button" id="envia" value="REGISTRAR" onclick="validar()">
+                            </ul>
+                            <div id="errores"></div>
+                        </form>
+                                             
+                    </div>
+
+                    <div class="div0" id="acerca">
+
+                    </div>
+
+                    <div class="div0" id="contacto">
+                         <form>
+                            <ul>
+                                <li>
+                                    <h3>CONTACTA CON EL CHEF</h3>
+                                    <label>*Nombre y Apellidos</label>
+                                    <input type="text" id="nom_cont" class="stilo_borde">
+                                </li>
+                                                           
+                                <li>
+                                    <label>*Email</label>
+                                    <input type="email" id="email_cont" class="stilo_borde">
+                                </li>
+
+                                <li>
+                                    <label>*¿En qué podemos ayudarte?</label>
+                                    <input type="text" id="direcc_cont" class="stilo_borde">
+                                </li>
+                    
+                                <input type="button" id="envia_cont" value="ENVIAR" onclick="validar()">
+                            </ul>
+                            <div id="errores"></div>
+                        </form>  
+                    </div> 
+
+                </section>
+            </main>
+
+            <aside id="columna">
+                <blockquote>Aquí colocaré las redes sociales de la página</blockquote>
+            </aside>
+
+            <footer id="pie">
+                <p>Pie de pagina</p>
+            </footer>      
+        </div>     
+    </body>
+</html>

@@ -1,0 +1,251 @@
+*{
+	box-sizing: border-box;
+	margin: 0px;
+	padding: 0px;
+}
+html, body
+{
+	width: 100%;
+	font-family: Arial, Helvetica, sans-serif;
+}
+.clear_float
+{
+	clear: both;
+}
+header
+{
+	z-index: 2;
+	position: fixed;
+	top: 0;
+	width: 100%;
+	height: 80px;
+	background-color: whitesmoke;	
+}
+#logo
+{
+	width: 140px;
+	margin-top: -30px;
+	margin-left: 20px;
+}
+nav
+{
+	float: right;
+}
+ul
+{
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+}
+.li_menu
+{
+	display: inline-block;	
+}
+header nav ul li a
+{
+	display: block;
+	width: 150px; 
+	height: 80px;
+	float: right;
+	border: none;
+	padding: 20%; 
+	color: #555;
+	text-decoration: none;
+	text-align: center;
+	font-weight: bold;
+}
+header nav ul li a:hover
+{
+	background: #262222;
+	color: whitesmoke;
+}
+main>section
+{
+	height: 100vh;
+	padding-top: 100px;
+}
+section#home img
+{
+	width: 65%;
+	position: relative;
+	left: 50%;
+	transform: translateX(-50%);
+	height: 50%;
+}
+#buscar_back
+{
+	background: rgba(244, 247, 247, 0.5);
+	margin-right: 30px;
+	padding: 15px;
+	padding-left: 20px;
+	width: 20%;
+	transform: translateY(50%);
+	border-radius: 10px;
+}
+#lupa
+{
+	
+    height: 40px;
+	cursor: pointer;
+	float: right;
+	padding: 6px;
+    position: relative;
+	bottom: 5px; 
+}
+#lupa:hover
+{
+	background-color: rgb(246, 247, 241);
+	border-radius: 10px;
+}
+#input_buscar
+{
+	padding: 5px;
+}
+h1
+{
+	color: whitesmoke;
+	background-color: rgb(104, 7, 7);
+	position: relative;
+	top: 205%;
+	text-align: center;
+	padding: 15px;
+}
+p#tema
+{
+	color: #262222;
+	position: relative;
+	top: 55px;
+	left: 15%;
+	width: 30%;
+}
+#foto_chef
+{
+	width: 40%;
+	position: relative;
+	padding-top: 15px;
+	transform: translateX(120%);
+}
+#contacto
+{
+	height: 80vh;
+}
+#form_sesion
+{
+	float: left;
+}
+h3
+{
+	padding-bottom: 20px;
+}
+.form_group
+{
+	padding-bottom: 15px;
+}
+.my_form .form_group
+{
+	display: block;
+}
+.my_form label
+{
+	display: block;
+}
+#form_sesion input[type="text"], #form_sesion input[type="number"] ,#form_sesion input[type="email"] 
+{
+	padding: 5px;
+	width: 80%;
+}
+#form_contact input[type="text"], #form_contact input[type="email"]
+{
+	padding: 5px;
+}
+#form_ident input[type="email"], #form_ident input[type="password"]
+{
+	padding: 5px;
+}
+#form_contact textarea
+{
+	padding: 5px;
+	width: 100%;	
+	height: 100px;
+}
+/*letra fuente del parrafo de las codiciones del formulario*/
+form p
+{
+	font-size: .9rem;
+	display: inline;
+}
+.envia
+{
+	padding: 10px;
+	margin-top: 15px;
+}
+.envia:hover
+{
+	color: whitesmoke;
+	background-color: rgb(121, 14, 14);
+}
+#form_cliente
+{
+	position: absolute;
+	width: 50%;
+	padding-left: 14%;
+	border-right: 6px solid lightgrey; 
+}
+#form_identificate
+{
+	position: absolute;
+	width: 50%;
+	left: 50%;
+	padding-left: 15%;
+}
+#form_contact
+{
+	position: absolute;
+	left: 45%;	
+}
+
+footer#pie
+{	
+	background-color: #262222;
+	height: 120px;
+	width: 100%;
+}
+p#p_pie
+{
+	color: whitesmoke;
+	text-align: center;
+	padding-top: 10px;
+}
+#face_pie
+{
+	padding-left: 44.5%;
+
+}
+footer img
+{
+	width: 50px;
+	padding-top: 10px;
+}
+
+@media all and (max-width: 1024px)
+{
+	#face_pie
+	{
+		padding-left: 40%;
+	}
+	p#tema
+	{
+		top: 90px;		
+	}
+	
+@media all and (max-width: 768px)
+{
+	
+	section img#foto_chef
+	{
+	  display: block;
+	  margin-left: auto;
+	  margin-right: auto;
+	  width: 50%;
+	}
+} 

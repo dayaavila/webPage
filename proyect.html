@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="es">
+    
+    <head>
+        <meta charset="utf-8">
+        <title>La nuve del Chef</title>
+        <link rel="icon" href="img/favicon.ico" type="image/x-icon"/>
+        <link rel="stylesheet" type="text/css" media="screen" href="proyect.css">
+        <script src="proyect.js"></script>
+    </head>
+
+    <body>
+        <header id="cabecera">
+            <img src="img/logo_chef_rojo.png" alt="logo" id="logo">
+            <nav id="menu">
+                <ul>
+                    <li class="li_menu">
+                        <a href="#home">HOME</a>
+                    </li>
+                    <li class="li_menu">
+                        <a href="#acerca">ACERCA DE</a>
+                    </li>
+                    <li class="li_menu">
+                        <a href="#sesion">INICIAR SESIÓN</a>
+                    </li>
+                    <li class="li_menu">
+                        <a href="#contacto">CONTACTO</a>
+                    </li>
+                </ul>   
+            </nav>
+        </header>
+        <main id="main">
+            <section id="home">
+                <img src="img/foto_portada03.jpg" id="portada">
+                <div id="buscar_back">
+                    <input type="text" placeholder="Buscar" id="input_buscar">
+                    <img id="lupa" src="img/lupa.png" onclick="lupa()">                
+                </div>
+            </section>
+            <section id="acerca">
+                <p id="tema"><b>Esta página está diseñada para optimizar y organizar el trabajo de todo chef, desde sus recetas, cálculo de precio y mucho más.</b></p>
+                <img id="foto_chef" src="img/chef.jpg">
+            </section>
+            <section id="sesion">
+                <div id="form_cliente">
+                    <form id="form_sesion" class="my_form">
+                        <ul>
+                            <h3>CLIENTE NUEVO</h3>
+                            <li class="form_group">
+                                <label>*Nombre</label>
+                                <input type="text" id="nombre" placeholder="Escribe tu Nombre" onkeyup="validar_nombre()">
+                                <div id="caja_nom"></div>
+                            </li>
+                            <li class="form_group">
+                                <label>*Apellidos</label>
+                                <input type="text" id="apell" placeholder="Escribe tu Apellidos" onkeyup="validar_apellido()">
+                                <div id="caja_apell"></div>                    
+                            </li>
+                            <li class="form_group">
+                                <label>*DNI</label>
+                                <input type="number" id="dni" placeholder="Escribe tu DNI" onkeyup="validar_dni()">
+                                <div id="caja_dni"></div> 
+                            </li>
+                            <li class="form_group">
+                                <label>*Dirección</label>
+                                <input type="text" id="direcc" placeholder="Escribe tu Dirección" onkeyup="validar_direccion()">
+                                <div id="caja_direcc"></div>
+                            </li>
+                            <li class="form_group">
+                                <label>*Teléfono</label>
+                                <input type="number" id="tlf" placeholder="Escribe tu Teléfono" onkeyup="validar_telefono()">
+                                <div id="caja_tlf"></div>
+                            </li>
+                            <li class="form_group">
+                                <label>*Email</label>
+                                <input type="email" id="email" placeholder="email" onkeyup="validar_email()">
+                                <div id="caja_email"></div>
+                            </li>
+                            <li>
+                                <input type="checkbox">
+                                <p>He leído y acepto los <b>términos y condiciones</b></p>
+                            </li>
+                            <input type="button" class="envia" value="REGÍSTRATE" onclick="validar_boton_cliente()">
+                            <div id="caja_validar_boton"></div>
+                        </ul>
+                    </form>
+                </div>
+                <div id="form_identificate">  
+                    <form id="form_ident" class="my_form">
+                        <ul>
+                            <h3>IDENTIFÍCATE</h3>
+                            <li class="form_group">
+                                <label>*Email</label>
+                                <input type="email" id="email_ident" placeholder="email" onkeyup="validar_email_ident()">
+                                <div id="caja_email_ident"></div>
+                            </li>
+                            <li class="form_group">
+                                <label>*Contraseña</label>
+                                <input type="password" id="contra" placeholder="contraseña" onkeyup="validar_contrase()"> 
+                                <div id="caja_contra"></div>
+                            </li>
+                            <input type="button" class="envia" value="IDENTIFÍCATE" onclick="validar_boton_ident()">
+                        </ul>
+                    </form>
+                </div>              
+            </section>
+            <section id="contacto">
+                 <form id="form_contact" class="my_form">
+                    <ul>
+                        <li class="form_group">
+                            <h3>CONTACTA CON EL CHEF</h3>
+                            <label>*Nombre y Apellidos</label>
+                            <input type="text" id="nom_cont" placeholder="Nombre y Apellidos" onkeyup="validar_nom_apell()">
+                            <div id="caja_nom_apell"></div>
+                        </li>                          
+                        <li class="form_group">
+                            <label>*Email</label>
+                            <input type="email" id="email_cont" placeholder="Email" onkeyup="validar_email_cont()">
+                            <div id="caja_email_cont"></div>
+                        </li>
+                        <li class="form_group">
+                            <label>*¿En qué podemos ayudarte?</label>
+                            <textarea name="Mensaje" id="mensaje" placeholder="Escribe aquí tu Mensaje" onkeyup="validar_mensaje_vacio()"></textarea>
+                            <div id="caja_mensaje"></div>
+                        </li>
+                        <input type="button" class="envia" value="ENVIAR" onclick="validar_boton_contac()">
+                    </ul>
+                </form>  
+            </section>
+        </main>
+        <footer id="pie">
+            <p id="p_pie"><b>ENCUÉNTRANOS EN</b></p>
+                <a href="https://es-es.facebook.com/" id="face_pie" class="icon_size" target="_blanck">
+                    <img id="icon_face" src="img/icon-face.png" >
+                </a>
+                <a href="https://www.instagram.com"  class="icon_size" target="_blanck">
+                <img id="icon1_insta" src="img/icon-insta.png">
+                </a>
+                <a href="https://www.linkedin.com"  class="icon_size" target="_blanck">
+                <img id="icon_icon" src="img/icon-in.png">
+                </a>
+                <a href="https://web.whatsapp.com/"  class="icon_size" target="_blanck">
+                <img id="icon_what" src="img/icon-what.png">
+                </a>
+        </footer>          
+    </body>
+</html>
